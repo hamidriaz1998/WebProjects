@@ -1,0 +1,50 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    width: 400px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #212121;
+    color: #f1f1f1;
+    padding: 0.5rem 1.25rem;
+    margin: 0;
+}
+
+.image {
+    width: 168px;
+    height: auto;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+h3 {
+    font-size: 16px;
+}
+.metadata,
+.duration {
+    font-size: 12px;
+}
+.duration {
+    position: absolute;
+    z-index: 10;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* left: 166px;
+    top: 96px; */
+    bottom: 4px;
+    right: 1px;
+    padding: 2px;
+}
